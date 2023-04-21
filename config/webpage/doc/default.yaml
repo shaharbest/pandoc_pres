@@ -1,0 +1,8 @@
+template: ${.}/structure/template.html
+include-before-body: ${.}/structure/header.html
+include-after-body: ${.}/structure/footer.html
+css:
+  - ${.}/style/global.css
+  - ${.}/style/sides.css
+toc: true
+standalone: true

@@ -1,0 +1,6 @@
+template: ${.}/structure/slidy.html
+include-in-header: ${.}/structure/copyrights.html
+include-before-body: ${.}/structure/header_logo.html
+css: ${.}/style.css
+toc: false
+standalone: true

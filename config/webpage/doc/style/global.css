@@ -1,0 +1,69 @@
+:root { --content-width: 35rem; }
+
+* { box-sizing: border-box; }
+
+nav li li li { display: none; }
+nav { background: whitesmoke; }
+nav a { text-decoration: none; }
+
+a { color: #5AB3AA; }
+a:focus { outline: thin dotted; }
+
+p { text-align: justify; }
+img { max-width: 100%; }
+
+.title {
+	width: auto;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+h1 { font-size: xx-large; }
+h2 { font-size: x-large; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1em; }
+h6 { font-size: 0.9em; }
+
+figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-inline: auto;
+	max-width: var(--content-width);
+	padding: 1rem;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+figcaption { display: none; }
+
+table {
+	margin-inline: auto;
+	border-collapse: collapse;
+}
+
+td, th { padding: .5rem; }
+table, td, th { border: 1px solid black; }
+tr.odd { background-color: hsl(0, 0%, 92%); }
+
+@media only screen and (min-width: 600px) {
+	main p:not(ul p):not(ol p),
+	ul, ol, div.sourceCode, dl,
+	h1, h2, h3, h4, h5, h6 {
+		width: var(--content-width);
+		margin-inline: auto;
+	}
+
+	table { max-width: var(--content-width); }
+}
+
+@media only screen and (max-width: 600px) {
+	main p:not(ul p):not(ol p),
+	ul, ol, div.sourceCode, dl,
+	h1, h2, h3, h4, h5, h6 {
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+	}
+}

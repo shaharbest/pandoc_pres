@@ -1,2 +1,4 @@
-# pandoc_pres
-pandoc project to create slideshows
+# Slideshows Generator
+
+generate slideshows in pdf and webpages
+from markdown files

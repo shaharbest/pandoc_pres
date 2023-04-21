@@ -1,0 +1,12 @@
+aspectratio: 169
+fontsize: 10pt
+logo: small_logo.png
+urlcolor: red
+theme: "Frankfurt"
+colortheme: "beaver"
+
+# - \setbeamercolor{background canvas}{bg=green}
+# - \setbeamertemplate{caption}{\raggedright\insertcaption\par}
+# - \definecolor{shahargrey}{rgb}{0, 0, 0}
+# - \setbeamercolor{background canvas}{bg=shahargrey}
+# - \definecolor{shahargrey}{RGB}{230, 230, 232}

@@ -1,0 +1,87 @@
+:root { --content-width: 60rem; }
+
+.slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+img {
+	display: block;
+	margin-inline:  auto;
+}
+
+table {
+	margin-inline: auto;
+	border-collapse: collapse;
+}
+
+td, th { padding: .5rem; }
+table, td, th { border: 1px solid black; }
+tr.odd { background-color: hsl(0, 0%, 92%); }
+
+nav li li li { display: none; }
+nav { background: whitesmoke; }
+nav a { text-decoration: none; }
+
+a { color: #5AB3AA; }
+a:focus { outline: thin dotted; }
+
+div.slide.titlepage h1.title {
+	padding: 0;
+	margin: 0;
+	font-size: 3.5em;
+}
+
+h1 { font-size: xx-large; }
+h2 { font-size: x-large; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1em; }
+h6 { font-size: 0.9em; }
+
+div.slide p { text-align: justify; }
+
+div.slide img {
+	max-width: var(--content-width);
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
+
+.figcaption { display: none; }
+
+.background { direction: rtl; }
+
+#head-icon {
+	width: 6rem;
+	margin: 0;
+}
+
+div.slide h1 { padding: 0; }
+
+@media only screen and (min-width: 600px) {
+	div.slide p:not(ul p):not(ol p),
+	div.slide ul,
+	div.slide ol,
+	pre.sourceCode,
+	dl,
+	div.slide h1:not(.title),
+	div.slide h2,
+	div.slide h3,
+	div.slide h4,
+	div.slide h5,
+	div.slide h6 {
+		width: var(--content-width);
+		margin-inline: auto;
+	}
+
+	table { max-width: var(--content-width); }
+}
+
+@media only screen and (max-width: 600px) {
+	pre.sourceCode {
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+	}
+}

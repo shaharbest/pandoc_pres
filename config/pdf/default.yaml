@@ -1,0 +1,4 @@
+highlight-style: tango
+to: beamer
+standalone: true
+metadata-file: ${.}/meta.yaml
